@@ -1,0 +1,81 @@
+.wrapper {
+
+  font-size: 2vmin;
+  
+  header, footer {
+    height: 10vh;
+    max-height: 50px;
+    min-height: 20px;
+    width: 100%;
+    left: 0; 
+    position: absolute; 
+    text-align: center;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+
+    max-width: 2000px;
+    margin: auto;
+    background: #d9e1e8;
+  }
+
+  header {
+    top: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    opacity: 0.5;
+  }
+
+  footer {
+    bottom: 0;
+    opacity: 0.3;
+    justify-content: space-around;
+
+    p, div {
+      flex-basis: 33%;
+    }
+   
+    .social-section {
+      padding-left: 2vw; // to align with the book (visually)
+      a {
+        text-decoration: none;
+        display: inline-block;
+        padding: 0 1vw;
+      }
+    }
+  }
+
+  .content {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    max-width: 2000px;
+    position: relative;
+
+    color: #d9e1e8;
+
+    .button {
+      z-index: 10;
+      margin-bottom: -25vmin;
+      margin-left: 1vmin; // to align with the book (visually)
+
+      width: 20vmin;
+      height: 10vmin;
+      max-width: 120px;
+      max-height: 60px;
+      border-radius: 1vmin;
+
+      background: #2b90d9;
+
+      cursor: pointer;
+      &:hover {
+        box-shadow: 1px 1px 1px gray;
+        background: lighten(#2b90d9, 5%);
+      }
+    }
+  }
+}
